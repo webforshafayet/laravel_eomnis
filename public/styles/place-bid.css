@@ -1,0 +1,120 @@
+.shoe-title-3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: #898989;
+}
+
+.bid-btn {
+    background: #3CB043;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+.buy-btn {
+    background: #F4F4F4;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    color: #3A3A3A;
+}
+
+.bg-silver {
+    background: #F4F4F4 !important;
+    border-radius: 10px !important;
+}
+
+.silver-text {
+    color: #898989;
+}
+
+.table-title-1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #3A3A3A;
+}
+
+.table-title-2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    color: #3A3A3A;
+}
+
+.table-title-3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #3A3A3A;
+}
+
+.total-border {
+    border-top: 1px solid #C4C4C4;
+}
+
+.bid-btn-green {
+    background: #3CB043;
+    border: 0.25px solid #C4C4C4;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FBFBFB;
+    width: 160px;
+}
+
+.bid-btn-red {
+    background: #E55B5B;
+    border: 0.25px solid #C4C4C4;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FBFBFB;
+    width: 160px;
+}
+
+.green-text {
+    color: #3CB043;
+}
+
+.green-bg {
+    background-color: #3CB043;
+}
+
+.form-check-input:checked {
+    background-color: #3CB043;
+    border-color: #3CB043;
+}
+
+@media only screen and (max-width: 768px) {
+    .shoe-title-3 {
+        font-size: 12px;
+    }
+
+    .table-title-1 {
+        font-size: 16px;
+    }
+    
+    .table-title-2 {
+        font-size: 20px;
+    }
+    
+    .table-title-3 {
+        font-size: 16px;
+    }
+
+    .small-silver {
+        font-size: 10px !important;
+    }
+}

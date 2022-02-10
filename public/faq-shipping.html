@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+    <title>Omnis</title>
+
+    <!-- Fav Icon -->
+    <link rel="icon" href="" type="image/gif" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Flickty CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e422e8ad98.js" crossorigin="anonymous"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/browse.css">
+    <link rel="stylesheet" href="styles/product-selection.css">
+    <link rel="stylesheet" href="styles/about-buying.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark pt-3">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    </ul>
+
+                    <a class="me-auto nav-logo" href="index.html">
+                        <img class="img-fluid" src="images/nav-omnis-logo.svg" alt="logo">
+                    </a>
+
+                    <div class="d-flex align-items-center">
+                        <ul class="navbar-nav">
+
+                            <li class="nav-item me-5 nav-myacc">
+                                <a class="nav-link" href="profile.html">
+
+                                    <div class="text-center">
+                                        <img class="img-fluid" src="images/user.svg" alt="user">
+                                    </div>
+                                    <p class="nav-text">My Account</p>
+                                </a>
+                            </li>
+
+                            <button class="btn nav-menu-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight">
+
+                                <img class="img-fluid" src="images/nav-icon.svg" alt="nav icon">
+                                <p class="nav-text">Menu</p>
+                            </button>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Navbar Offcanvas -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header pt-4">
+                <button type="button" class="ms-3 btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+                </button>
+
+                <div class="text-center">
+                    <img class="img-fluid" src="images/offcanvas-logo.svg" alt="offcanvas">
+                </div>
+
+                <div></div>
+            </div>
+
+            <div class="offcanvas-body">
+                <div class="flex-shrink-0 p-3 bg-white">
+                    <ul class="list-unstyled ps-0">
+                        <li class="mb-3">
+                            <button
+                                class="d-flex justify-content-between w-100 btn btn-toggle align-items-center rounded collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#sneakers-collapse" aria-expanded="false">
+
+                                <span>Sneakers</span>
+                                <img class="img-fluid" src="images/offcanvas-right-arrow.svg" alt="arrow">
+                            </button>
+
+                            <div class="collapse py-3" id="sneakers-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li class="pb-3 px-1">
+                                        <a href="#" class="link-dark rounded text-decoration-none">Overview</a>
+                                    </li>
+
+                                    <li class="pb-3 px-1">
+                                        <a href="#" class="link-dark rounded text-decoration-none">Weekly</a>
+                                    </li>
+
+                                    <li class="pb-3 px-1">
+                                        <a href="#" class="link-dark rounded text-decoration-none">Monthly</a>
+                                    </li>
+
+                                    <li class="pb-3 px-1">
+                                        <a href="#" class="link-dark rounded text-decoration-none">Annually</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="mb-3">
+                            <button
+                                class="d-flex justify-content-between w-100 btn btn-toggle align-items-center rounded collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#about-collapse" aria-expanded="false">
+
+                                <span>About</span>
+                                <img class="img-fluid" src="images/offcanvas-right-arrow.svg" alt="arrow">
+                            </button>
+
+                            <div class="collapse py-3" id="about-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li class="pb-3 px-1">
+                                        <a href="about.html" class="link-dark rounded text-decoration-none">
+                                            About
+                                        </a>
+                                    </li>
+
+                                    <li class="pb-3 px-1">
+                                        <a href="about-buying.html" class="link-dark rounded text-decoration-none">
+                                            About Buying
+                                        </a>
+                                    </li>
+
+                                    <li class="pb-3 px-1">
+                                        <a href="about-selling.html"
+                                            class="link-dark rounded text-decoration-none">About Selling</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="mb-3">
+                            <button
+                                class="d-flex justify-content-between w-100 btn btn-toggle align-items-center rounded collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#faq-collapse" aria-expanded="false">
+
+                                <span>FAQ</span>
+                                <img class="img-fluid" src="images/offcanvas-right-arrow.svg" alt="arrow">
+                            </button>
+
+                            <div class="collapse py-3" id="faq-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li class="pb-3 px-1">
+                                        <a href="faq.html" class="link-dark rounded text-decoration-none">
+                                            FAQ
+                                        </a>
+                                    </li>
+
+                                    <li class="pb-3 px-1">
+                                        <a href="faq-buying.html" class="link-dark rounded text-decoration-none">
+                                            FAQ Buying
+                                        </a>
+                                    </li>
+
+                                    <li class="pb-3 px-1">
+                                        <a href="faq-selling.html" class="link-dark rounded text-decoration-none">FAQ
+                                            Selling</a>
+                                    </li>
+
+                                    <li class="pb-3 px-1">
+                                        <a href="faq-myaccount.html" class="link-dark rounded text-decoration-none">
+                                            FAQ My Account</a>
+                                    </li>
+
+                                    <li class="pb-3 px-1">
+                                        <a href="faq-product-guidelines.html"
+                                            class="link-dark rounded text-decoration-none">
+                                            FAQ Product Guidelines</a>
+                                    </li>
+
+                                    <li class="pb-3 px-1">
+                                        <a href="faq-shipping.html" class="link-dark rounded text-decoration-none">
+                                            FAQ Shipping</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="mb-3">
+                            <a href="#"
+                                class="d-flex justify-content-between w-100 btn btn-toggle align-items-center rounded collapsed">
+
+                                <span>How It Works</span>
+                            </a>
+                        </li>
+
+                        <li class="mb-3">
+                            <a href="#"
+                                class="d-flex justify-content-between w-100 btn btn-toggle align-items-center rounded collapsed">
+
+                                <span>New Releases</span>
+                            </a>
+                        </li>
+
+                        <li class="mb-3">
+                            <button
+                                class="d-flex justify-content-between w-100 btn btn-toggle align-items-center rounded collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#popular-collapse" aria-expanded="false">
+
+                                <span>Popular Brands</span>
+                                <img class="img-fluid" src="images/offcanvas-right-arrow.svg" alt="arrow">
+                            </button>
+
+                            <div class="collapse py-3" id="popular-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li class="pb-3 px-1">
+                                        <a href="#" class="link-dark rounded text-decoration-none">Overview</a>
+                                    </li>
+
+                                    <li class="pb-3 px-1">
+                                        <a href="#" class="link-dark rounded text-decoration-none">Weekly</a>
+                                    </li>
+
+                                    <li class="pb-3 px-1">
+                                        <a href="#" class="link-dark rounded text-decoration-none">Monthly</a>
+                                    </li>
+
+                                    <li class="pb-3 px-1">
+                                        <a href="#" class="link-dark rounded text-decoration-none">Annually</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="mb-3">
+                            <a href="#"
+                                class="d-flex justify-content-between w-100 btn btn-toggle align-items-center rounded collapsed">
+
+                                <span>News</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mb-5 mx-3">
+                <div class="row text-center canvas-language-container">
+                    <div class="col-4 border-right">
+                        <button class="btn canvas-silver-text">Australia</button>
+                    </div>
+                    <div class="col-4 border-right">
+                        <button class="btn canvas-silver-text">English</button>
+                    </div>
+                    <div class="col-4">
+                        <button class="btn canvas-silver-text">AUD</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="px-5 pb-3">
+                <div class="d-flex justify-content-between">
+                    <a href="#" class="w-100 btn offcanvas-outline-btn me-3">Log In</a>
+                    <a href="#" class="w-100 btn offcanvas-btn">Sign Up</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Location Modal -->
+        <div class="modal fade" id="locationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0 mb-0 pb-0">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            Confirm Your Location
+                        </h5>
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <p class="modal-text w-75">
+                            Update your Location to improve your
+                            experience on Omnisnco
+                        </p>
+
+                        <select class="form-select mt-4 mb-3" aria-label="Default select example">
+                            <option selected>Region</option>
+                            <option value="1">Australia</option>
+                            <option value="2">Canada</option>
+                            <option value="3">United States</option>
+                        </select>
+
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Language</option>
+                            <option value="1">English</option>
+                            <option value="2">French</option>
+                            <option value="3">Chinese</option>
+                        </select>
+                    </div>
+
+                    <div class="modal-footer border-0">
+                        <button type="button" class="btn btn-danger w-100 modal-btn"
+                            data-bs-dismiss="modal">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sell Modal -->
+        <div class="modal fade" id="sellModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content mx-0">
+                    <div class="modal-header">
+                        <div class="px-5"></div>
+
+                        <h5 class="modal-title portfolio-title mx-auto" id="exampleModalLabel">
+                            Choose a product
+                        </h5>
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="search-bar input-group mb-3 p-5 bg-silver">
+                            <span class="input-group-text bg-white border-0" id="basic-addon1">
+                                <img src="images/search-icon.svg" alt="search icon">
+                            </span>
+                            <input type="text" class="form-control border-0" placeholder="Search for brand, color etc"
+                                aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="text-center black-modal pb-4">
+                            <img class="img-fluid mt-2" src="images/modal-dashed.svg" alt="dashed">
+
+                            <div class="mt-5 text-center px-4 pb-3">
+                                <a href="browse.html" class="btn w-100 modal-search-btn">Search</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="black-bg">
+        <div class="container py-4">
+            <h6 class="text-white fs-4 mb-0">
+                FAQ (Frequently Asked Questions)
+            </h6>
+            <div class="border-top w-50 mt-3"></div>
+
+            <div class="row pt-4">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-7 pb-5">
+                    <p class="text-white mb-3">
+                        We hope this FAQ will help you answer some of the more common ones.
+                    </p>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text bg-white border-0" id="basic-addon1">
+                            <img src="images/search-icon.svg" alt="search icon">
+                        </span>
+                        <input type="text" class="form-control border-0" placeholder="Search your questions">
+                    </div>
+                    <button class="btn btn-success green-bg border-0 px-5 rounded">Search</button>
+                </div>
+            </div>
+
+            <div class="row pt-4">
+                <h6 class="text-white fs-4 mb-0">
+                    <img class="img-fluid me-2" src="images/faq-shipping.svg" alt="cart">
+                    Shipping
+                </h6>
+                <div class="border-top w-50 mt-3"></div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-7 pb-5">
+                    <p class="text-muted my-3">
+                        Top articles in category "Buying on OMNIS"
+                    </p>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                    <div class="bg-white rounded p-4">
+                        <h6 class="text-dark fs-4 mb-4">
+                            <img class="img-fluid me-2" src="images/faq-icon.svg" alt="faq">
+                            Frequently Asked
+                            Questions
+                        </h6>
+
+                        <div>
+                            <div class="mb-3">
+                                <img class="img-fluid me-2" src="images/faq-user.svg" alt="faq">
+                                <span class="green-text">My Account</span>
+                            </div>
+
+                            <div class="mb-3">
+                                <img class="img-fluid me-2" src="images/faq-cart-green.svg" alt="faq">
+                                <span class="green-text">Recent Purchases FAQ</span>
+                            </div>
+
+                            <div class="mb-3">
+                                <img class="img-fluid me-2" src="images/faq-sale.svg" alt="faq">
+                                <span class="green-text">Recent Sales FAQ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white">
+            <div class="container py-4">
+                <!-- FAQ Container -->
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <!-- Single Question -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+
+                                <div class="d-flex flex-column">
+                                    <div class="green-text mb-2">
+                                        What happens if my item gets lost or damaged?
+                                    </div>
+
+                                    <div>
+                                        <small class="small-text text-muted">Last Modified: 10/12/12</small>
+                                    </div>
+                                </div>
+                            </button>
+                        </h2>
+
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p class="small-text text-muted">
+                                    Even though it may be a rare occurrence, anything is possible to happen to the item
+                                    once dispatched. To provide reassurance and reliance with our trusted couriers, we
+                                    ask that every buyer obtains a receipt upon drop off and KEEP this receipt until the
+                                    item has been delivered. If a parcel were to go missing, as long as you provide us
+                                    the receipt and raise the query to us within the acceptable time (two business
+                                    days), we can then use this receipt and communicate directly with the couriers to
+                                    launch an investigation. We make it our goal to ensure all investigations are looked
+                                    at thoroughly and fairly. Due to the depth of internal investigation required for
+                                    most couriers when there’s a parcel issue, it will usually be resolved within 10
+                                    business days. More information about this can be found without our Terms and
+                                    Conditions.
+                                    If you have any issues relating to a package in transit, please email us at
+                                    <a href="#" class="text-decoration-none green-text">info@omnisnco.com</a> or use our
+                                    live chat 24/7 service. Please provide as much detail
+                                    as possible.
+                                </p>
+
+                                <p class="small-text text-muted">
+                                    If your item is reflecting as “delivered” but never arrived, we ask that you please
+                                    reach out to us within two business days to ensure you are eligible to make a claim.
+                                    If you have made changes to your delivery options through a carrier management
+                                    system, this may void your eligibility to make a claim. However, we will assess each
+                                    case to the best of our ability to ensure all users receive a fair outcome.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Question -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+
+                                <div class="d-flex flex-column">
+                                    <div class="green-text mb-2">
+                                        It’s exceeded two business days and there’s been no Tracking Update?
+                                    </div>
+
+                                    <div>
+                                        <small class="small-text text-muted">Last Modified: 10/12/12</small>
+                                    </div>
+                                </div>
+                            </button>
+                        </h2>
+
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p class="small-text text-muted">
+                                    Please contact Omnis at <a href="#"
+                                        class="text-decoration-none green-text">info@omnisnco.com</a> or visit our 24/7
+                                    Live Chat assistance,
+                                    provide us your order number and explain the tracking issue you’re facing, in as
+                                    much detail as possible.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Question -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+
+                                <div class="d-flex flex-column">
+                                    <div class="green-text mb-2">
+                                        I received my item but it is damaged?
+                                    </div>
+
+                                    <div>
+                                        <small class="small-text text-muted">Last Modified: 10/12/12</small>
+                                    </div>
+                                </div>
+                            </button>
+                        </h2>
+
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p class="small-text text-muted">
+                                    If you have received your item but it is damaged, we will launch an investigation.
+                                    In order for us to assess the situation, we will require photo(s) of the damage
+                                    you’re referring to (sneakers and/or boxing). We have implemented a system where
+                                    buyers must take several photos during the packaging phase and upload it to the
+                                    appropriate section on their account. This is done to ensure the correct and
+                                    compliant packaging standards were met. If no photos were taken by the Seller and an
+                                    issue has been raised from the Buyer, this could result in a full refund to the
+                                    Buyer.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Question -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour">
+
+                                <div class="d-flex flex-column">
+                                    <div class="green-text mb-2">
+                                        I dropped off my item at the pickup point at a third-party courier?
+                                    </div>
+
+                                    <div>
+                                        <small class="small-text text-muted">Last Modified: 10/12/12</small>
+                                    </div>
+                                </div>
+                            </button>
+                        </h2>
+
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p class="small-text text-muted">
+                                    We encourage all sellers to use our partnered couriers to ensure an efficient and
+                                    timely delivery on your item. We will not be held responsible or liable for packages
+                                    organised by third party carriers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Question -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                aria-controls="flush-collapseFive">
+
+                                <div class="d-flex flex-column">
+                                    <div class="green-text mb-2">
+                                        My item never left drop off?
+                                    </div>
+
+                                    <div>
+                                        <small class="small-text text-muted">Last Modified: 10/12/12</small>
+                                    </div>
+                                </div>
+                            </button>
+                        </h2>
+
+                        <div id="flush-collapseFive" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p class="small-text text-muted">
+                                    The first step that we would recommend you take is reaching out to the exact
+                                    location you dropped your item to. This would provide you more information and
+                                    insight its current status. Your item should still be at that location as there have
+                                    been no physical scans of it elsewhere.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Question -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingsix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapsesix" aria-expanded="false"
+                                aria-controls="flush-collapsesix">
+
+                                <div class="d-flex flex-column">
+                                    <div class="green-text mb-2">
+                                        How much does shipping cost for Buyers?
+                                    </div>
+
+                                    <div>
+                                        <small class="small-text text-muted">Last Modified: 10/12/12</small>
+                                    </div>
+                                </div>
+                            </button>
+                        </h2>
+
+                        <div id="flush-collapsesix" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingsix" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p class="small-text text-muted">
+                                    Shipping costs cover the expense of getting the item from the Seller to the Buyer.
+                                    These costs will be included in the price breakdown when you place a bid or Buy Now.
+                                    All rates below are based on the average weighting and sizes of a show box. Some
+                                    sneakers will naturally be heavier, these will incur additional shipping charges.
+                                    We ship with DHL and many more.
+                                </p>
+
+                                <div class="text-center">
+                                    <img src="images/faq-shipping.PNG" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Question -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingseven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseseven" aria-expanded="false"
+                                aria-controls="flush-collapseseven">
+
+                                <div class="d-flex flex-column">
+                                    <div class="green-text mb-2">
+                                        I just sold my first item. How long do I have to ship?
+                                    </div>
+
+                                    <div>
+                                        <small class="small-text text-muted">Last Modified: 10/12/12</small>
+                                    </div>
+                                </div>
+                            </button>
+                        </h2>
+
+                        <div id="flush-collapseseven" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingseven" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p class="small-text text-muted">
+                                    Congratulations on selling your first item! Once a transaction has been complete,
+                                    your shipping details including the deadline can be found in the confirmation email
+                                    we send once your item has been successfully purchased. This can also be found in
+                                    your My Account section (My account > Selling). You must ensure you print out the
+                                    shipping label and ship the item (adhering to our shipping standard procedure) prior
+                                    to the deadline commencing. Most sneakers will have a deadline of two business days
+                                    to be dispatched, some will have 3-5 depending on the type of release and the brand
+                                    shipping nature.
+                                </p>
+
+                                <p class="small-text text-muted">
+                                    Shipping Instructions
+                                    Please ensure you follow these instructions or your payment will be delayed. As a
+                                    reminder, Omnis is not responsible for any items not packaged correctly and
+                                    securely.
+                                    Place this invoice inside the box with the product
+                                    Place the box into a bigger sized box that is no more than 5cm of your item from
+                                    each side. Use bubble wrap or packing paper to ensure your item is secure and will
+                                    not sustain damage during transit.
+                                    Seal the package across the side flaps and the seams that run through the middle on
+                                    the top and bottom surface. Do not use masking tape or duct tape.
+                                    Tape or place the Omnis provided DHL label to the outside of your shipping box
+                                    Drop off your sealed package to an authorised DHL location
+                                    Ensure you get a RECEIPT which will allow you to keep track of your item during
+                                    transit from drop off to delivery.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container px-4 pb-5">
+                <p>Can’t find the answer to your question? Continue to search our help center or contact us</p>
+
+                <button class="btn btn-danger red-bg px-4">Contact Us</button>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <ul>
+                        <li>
+                            <img src="images/footer-logo.svg" alt="footer logo">
+                        </li>
+
+                        <li class="footer-title">Lorem Ipsum has been the
+                            industry's standard</li>
+
+                        <li class="d-flex align-items-center contact">
+                            <div class="me-3 contact">
+                                <img src="images/marker.svg" alt="marker">
+                            </div>
+                            <div>Location, City</div>
+                        </li>
+
+                        <li class="d-flex align-items-center contact">
+                            <div class="me-2">
+                                <img src="images/phone.svg" alt="phone">
+                            </div>
+                            <div>+6289 456 3455</div>
+                        </li>
+
+                        <li>
+                            <a href="#">www.omnis.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-2">
+                    <ul>
+                        <li class="footer-sub-title">Menu</li>
+                        <li>
+                            <a href="#">Shop</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms & Policy</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-2">
+                    <ul>
+                        <li class="footer-sub-title">Account</li>
+                        <li>
+                            <a href="#">My Account</a>
+                        </li>
+                        <li>
+                            <a href="#">Checkout</a>
+                        </li>
+                        <li>
+                            <a href="#">My Cart</a>
+                        </li>
+                        <li>
+                            <a href="#">My Catalog</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-2">
+                    <ul>
+                        <li class="footer-sub-title">Stay Connected</li>
+                        <li>
+                            <a href="#">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="#">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="#">Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                    <ul>
+                        <li class="footer-sub-title">Stay Updated</li>
+                        <li class="d-flex">
+                            <input type="text" class="form-control me-1 p-2" placeholder="Enter your email">
+                            <button class="btn fly-btn">
+                                <img src="images/fly-papper.svg" alt="fly papper">
+                            </button>
+                        </li>
+                    </ul>
+
+                    <div class="mt-5">
+                        <div class="row text-center footer-language-container">
+                            <div class="col-4 footer-border-right">
+                                <button class="btn text-white m-0 p-0">Australia</button>
+                            </div>
+                            <div class="col-4 footer-border-right">
+                                <button class="btn text-white m-0 p-0">English</button>
+                            </div>
+                            <div class="col-4">
+                                <button class="btn text-white m-0 p-0">AUD</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <!-- Flickty JS -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- External Script -->
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

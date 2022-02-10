@@ -1,0 +1,141 @@
+a {
+    text-decoration: none;
+}
+
+.black-icon {
+    display: none;
+}
+
+.side-bar {
+    background-color: #313131;
+    color: #FFFFFF;
+}
+
+.side-bar-title {
+    font-weight: 500;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.side-item-title-1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    color: #FFFFFF;
+}
+
+.side-item-title-2 {
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 14px;
+    color: #E5E5E5;
+}
+
+/* For Hover Effect */
+.side-item:hover {
+    background-color: #FBFBFB;
+}
+
+.side-item:hover .side-item-title-1, .side-item:hover .side-item-title-2 {
+    color: #313131 !important;
+}
+
+.side-item:hover .black-icon {
+    display: block;
+}
+
+.side-item:hover .white-icon {
+    display: none;
+}
+
+/* For Active Class */
+.side-item-active {
+    background-color: #FBFBFB !important;
+    width: 100% !important;
+}
+
+.side-item-active .side-item-title-1, .side-item-active .side-item-title-2 {
+    color: #313131 !important;
+}
+
+.side-item-active .black-icon {
+    display: block;
+}
+
+.side-item-active .white-icon {
+    display: none;
+}
+
+/* Content CSS */
+.light-bg {
+    background-color: #E5E5E5;
+}
+
+.content-container {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.profile-title-container {
+    border-bottom: 1px solid #898989;;
+}
+
+.profile-title-container h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    color: #313131;
+}
+
+.profile-title-container div p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #313131;
+}
+
+.info-icon {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #313131;
+}
+
+.info {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    color: #898989;
+}
+
+.table-btn {
+    background: #E55B5B;
+    border-radius: 5px;
+}
+
+.table-btn-2 {
+    background: #898989;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .content-container {
+        margin: 15px !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .content-container span, .content-container h4 {
+        font-size: 14px !important;
+    }
+
+    .table-btn {
+        padding: 10px !important;
+        font-size: 16px !important;
+    }
+
+    .table-btn-2 {
+        padding: 5px !important;
+        font-size: 14px !important;
+    }
+}

@@ -1,0 +1,514 @@
+/* Common CSS */
+body {
+    font-family: Roboto;
+}
+
+.nav-logo {
+    position: relative;
+    left: 80px;
+}
+
+.blur-img {
+    filter: blur(2px);
+}
+
+.canvas-language-container {
+    background-color: #313131;
+    border: 2.15873px solid #898989;
+    padding: 15px;
+    border-radius: 10.7936px;
+}
+
+.border-right {
+    border-right: 2px solid #898989;
+}
+
+.btn-border {
+    border: 2px solid #313131;
+    border-radius: 10px;
+}
+
+.border-line {
+    position: relative;
+    bottom: 8px;
+}
+
+.border-line-2 {
+    position: relative;
+    top: 3px;
+}
+
+.card-body-2 {
+    position: relative;
+    top: 1px;
+}
+
+
+.canvas-silver-text {
+    color: #898989 !important;
+}
+
+.black-btn {
+    background-color: #3A3A3A;
+    border: 3px solid #313131;
+    border-radius: 10px;
+}
+
+.small-text {
+    font-size: 12px;
+}
+
+/* Header CSS */
+
+/* Navbar CSS */
+.navbar {
+    background-color: #313131;
+    box-shadow: 0px 3px 4px rgba(249, 207, 105, 0.1);
+}
+
+.nav-text {
+    font-weight: normal;
+    font-size: 12px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+.nav-btn {
+    background: #E65B5B;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.8364px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 96px;
+}
+
+.green-bg {
+    background: #3CB043;
+}
+
+.nav-btn-green {
+    background: #3CB043;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.8364px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 96px;
+}
+
+.nav-btn:hover {
+    background: #f04747;
+}
+
+.nav-btn-green:hover {
+    background: #2bad34;
+}
+
+.top-m {
+    margin-top: 12px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #FFFFFF !important;
+}
+
+.bg-silver {
+    background-color: #F4F4F4 !important;
+}
+
+.modal-search-btn {
+    background: #3CB043;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) { 
+    .nav-link div {
+        text-align: left !important;
+    }
+
+    .nav-link p {
+        text-align: left !important;
+    }
+
+    .nav-item {
+        margin-top: 20px;
+    }
+
+    .nav-myacc {
+        margin-top: -28px;
+    }
+
+    .nav-logo, .nav-menu-btn, .nav-btn, .nav-btn-green {
+        display: none;
+    }
+}
+
+/* Search Bar CSS */
+.search-container {
+    background-color: #313131;
+    padding: 10px;
+}
+
+.search-container ul {
+    padding-top: 8px;
+    font-family: Roboto;
+}
+
+.search-container ul .list-circle-none {
+    list-style: none;
+}
+
+.search-container ul .nav-item {
+    margin-right: 40px;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.search-container ul .nav-item .nav-link {
+    color: #FFFFFF;
+}
+
+.search-bar {
+    padding: 10px 0;
+    max-width: 839px;
+    margin: auto;
+}
+
+.search-bar
+.textarea:focus, 
+textarea.form-control:focus, 
+input.form-control:focus, 
+input[type=text]:focus:focus {
+  box-shadow: inset 0 -1px 0 #ddd;
+}
+
+/* Carousel CSS */
+.carousel {
+    background: #313131;
+  }
+  
+  .carousel-cell {
+    width: 33.33%;
+  }
+
+  .flickity-page-dots {
+      background-color: #313131;
+      padding: 0 20px 30px 20px;
+  }
+
+  .flickity-page-dots .dot {
+      background: #3CB043;
+  }
+
+  .flickity-prev-next-button {
+      display: none;
+  }
+
+/* Main CSS */
+
+/* Performance CSS */
+.performance {
+    background-color: #E5E5E5;;
+}
+
+.performance .card-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #3A3A3A;
+    margin-bottom: 2px;
+}
+
+.performance .card-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    color: #898989;
+}
+
+@media only screen and (max-width: 600px) {
+    .performance .card-body {
+      text-align: center;
+      padding-top: 10px !important;
+    }
+}
+
+/* Live Bids CSS */
+.live-bids {
+    background-color: #E5E5E5;
+}
+
+.live-bids .card-title {
+    color: #3A3A3A;
+    font-size: 25px;
+}
+
+.live-bids .card-text {
+    font-size: 17px;
+    color: #3A3A3A;
+}
+
+.live-bids-title {
+    font-weight: 500;
+    font-size: 40px;
+    color: #313131;
+}
+
+.live-bids-sub-title {
+    font-size: 16px;
+    color: #3A3A3A;
+}
+
+.live-bids a {
+    text-decoration: none;
+}
+
+/* Offcanvas CSS */
+.offcanvas-outline-btn {
+    background: #FFFFFF;
+    border: 2px solid #313131;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #313131;
+}
+
+.offcanvas-outline-btn:hover {
+    border: 2px solid #838383;
+    color: #838383;
+}
+
+.offcanvas-btn:hover {
+    background: #585858;
+    color: white !important;
+}
+
+.offcanvas-btn {
+    background: #313131;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.two-btn {
+    border: 1px solid #3A3A3A;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    color: #313131;
+    width: 100%;
+    outline: 2px solid #3A3A3A;
+}
+
+.more-radious {
+    border-radius: 10px !important;
+}
+
+.card {
+    box-shadow: none !important;
+}
+
+@media only screen and (max-width: 768px) { 
+    .live-bids-title {
+        font-size: 24px;
+    }
+
+    .live-bids-sub-title {
+        font-size: 14px;
+    }
+}
+
+/* Most Popular CSS */
+.most-popular-bg {
+    background-color: #313131;
+}
+
+/* New Releases CSS */
+.underline-container {
+    color: #3A3A3A;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+/* Popular Brands CSS */
+.popular-brands .card-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    color: #313131;
+}
+
+.popular-brands .image-shadow {
+    filter: drop-shadow(1px 2px 10px rgba(0, 0, 0, 0.1));
+}
+
+/* Modal CSS */
+.modal-text {
+    font-size: 16px !important;
+    font-weight: 100 !important;
+}
+
+.modal-btn {
+    background-color: #E55B5B !important;
+}
+
+/* Footer CSS */
+footer {
+    background-color: #626262;
+    color: #FFFFFF;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+footer ul li a:hover {
+    color: lightgray;
+}
+
+footer .footer-sub-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+}
+
+footer .form-control {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+
+.fly-btn {
+    background-color: #3CB043;
+}
+
+.footer-border-right {
+    border-right: 1px solid white;
+}
+
+.footer-language-container {
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 0;
+    margin: 0;
+    padding: 13px 0;
+}
+
+
+@media only screen and (max-width: 599px) {
+    .card-title {
+        font-size: 10px !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .card-body, .card-footer  {
+        padding: 5px !important;
+    }
+
+    .card-text {
+        font-size: 6px !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .footer-title {
+        font-size: 5px !important;
+    }
+
+    .footer-price {
+        font-size: 8px !important;
+    }
+
+    .two-btn {
+        font-size: 6px !important;
+    }
+
+    .two-title {
+        font-size: 8px !important;
+    }
+
+    .two-price {
+        font-size: 8px !important;
+    }
+
+    .aug, .aug-number {
+        display: none;
+    }
+
+    .black-btn {
+        font-size: 10px !important;
+        width: 100% !important;
+        margin-top: 10px !important;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    .card-title {
+        font-size: 14px !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .card-body, .card-footer  {
+        padding: 10px !important;
+    }
+
+    .card-text {
+        font-size: 10px !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .footer-title {
+        font-size: 10px !important;
+    }
+
+    .footer-price {
+        font-size: 12px !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    footer {
+        text-align: center;
+    }
+
+    footer .d-flex {
+        text-align: center !important;
+    }
+
+    .contact {
+        justify-content: center;
+    }
+
+    footer ul {
+        margin-bottom: 50px;
+    }
+}

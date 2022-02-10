@@ -1,0 +1,51 @@
+.security-title-1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #313131;
+}
+
+.information {
+    border-bottom: 1px solid #898989;
+}
+
+.enroll-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #898989;
+}
+
+.silver-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #898989;
+}
+
+.question {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #313131;
+}
+
+@media only screen and (max-width: 768px) {
+    .security-title-1 {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .enroll-text {
+        font-size: 13px;
+        margin-bottom: 0;
+    }
+    
+    .silver-text {
+        font-size: 14px;
+    }
+    
+    .question {
+        font-size: 16px;
+    }
+}

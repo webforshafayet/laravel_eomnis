@@ -1,0 +1,37 @@
+.product-details .product-details-img {
+    margin: auto;
+}
+
+.product-details .carousel-indicators {
+    position: relative;
+    top: 105%;
+}
+
+.product-details .carousel-indicators button {
+    width: 7px !important;
+    border-radius: 100%;
+    height: 7px !important;
+    background-color: #3CB043 !important;
+    margin-right: 10px !important;
+}
+
+.product-details .size-text {
+    font-size: 12px;
+}
+
+.product-details .size-active {
+    border: 1px solid #3CB043;
+}
+
+.product-details .sizes-container .btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.carousel {
+    background: white;
+}
+
+.table>:not(caption)>*>* {
+    border-bottom-width: 1px;
+}

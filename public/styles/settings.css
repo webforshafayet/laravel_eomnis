@@ -1,0 +1,93 @@
+.title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    color: #313131;
+}
+
+.title-1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px !important;
+    color: #313131;
+}
+
+.details-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #313131;
+}
+
+.details-title-1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    color: #313131;
+}
+
+.details-title-3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #898989;
+}
+
+.notification-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px !important;
+    color: #313131;
+}
+
+.form-select {
+    width: 90px;
+}
+
+.visa-card {
+    width: 60px;
+}
+
+@media only screen and (max-width: 768px) {
+    .title {
+        font-size: 20px;
+    }
+    
+    .title-1 {
+        font-size: 14px !important;
+    }
+    
+    .details-title {
+        font-size: 12px;
+    }
+    
+    .details-title-1 {
+        font-size: 14px;
+    }
+    
+    .details-title-3 {
+        font-size: 14px;
+    }
+    
+    .notification-title {
+        font-size: 10px !important;
+    }
+
+    .edit-text {
+        font-size: 14px !important;
+    }
+
+    .center-text {
+        text-align: center !important;
+    }
+
+    .hide {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .hide {
+        display: none;
+    }
+}

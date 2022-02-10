@@ -1,0 +1,130 @@
+.content {
+    background-color: #E5E5E5;
+}
+
+.card {
+    background: #FFFFFF;
+    box-shadow: 1.27049px 1.90573px 6.35243px rgba(0, 0, 0, 0.1);
+    border-radius: 6.35243px;
+}
+
+.card-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15.8811px;
+    color: #3A3A3A;
+}
+
+.card-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10.7991px;
+    color: #3A3A3A;
+}
+
+.card-footer {
+    background-color: #3CB043;
+    color: #FFFFFF;
+}
+
+.footer-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19.0573px;
+    color: #FFFFFF;
+}
+
+.footer-price {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25.4097px;
+    color: #FFFFFF;
+}
+
+.less-margin {
+    margin: 0 !important;
+    padding-top: 5px !important;
+}
+
+.side-item-active {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 1px;
+}
+
+.divided {
+    border: 0.5px solid #E5E5E5;
+}
+
+.rounded-btn {
+    background: #313131;
+    border: 1.5px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #E5E5E5;
+}
+
+.rounded-btn:hover {
+    background: #E5E5E5;
+    color: #313131;
+}
+
+.rounded-btn-active {
+    background: #E5E5E5;
+    color: #313131;
+}
+
+.prices-label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: #E5E5E5;
+}
+
+.input-container {
+    background: #313131;
+    border: 1.5px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+input {
+    color: #E5E5E5;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.pagi-btn {
+    background: #C4C4C4 !important;
+    border-radius: 5px !important;
+    color: #313131 !important;
+    font-style: normal !important;
+    font-size: 17px !important;
+}
+
+.pagi-btn-active {
+    background: #313131 !important;
+    color: #FFFFFF !important;
+}
+
+
+
+@media only screen and (max-width: 768px) { 
+    .featured-container {
+        width: 100% !important;
+    }
+
+    .pagination {
+        display: none;
+    }
+
+}

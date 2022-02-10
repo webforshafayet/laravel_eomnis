@@ -1,0 +1,66 @@
+.tab-bar-container .nav-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #313131;
+}
+
+.search-bar
+.textarea:focus, 
+textarea.form-control:focus, 
+input.form-control:focus, 
+input[type=text]:focus:focus {
+  box-shadow: 0 !important;
+  outline: none !important;
+  border-color: #DEE2E6 !important;
+}
+
+.table thead tr {
+    border-top: 1px solid #898989 !important;
+    border-bottom: 1px solid #898989 !important;
+    color: #313131;
+    font-weight: 500;
+}
+
+.star-box {
+    background: #FFFFFF;
+    border: 0.25px solid #C4C4C4;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    font-size: 17px;
+}
+
+@media only screen and (max-width: 450px) {
+    .table thead tr {
+        font-size: 8px !important;
+    }
+
+    .table tbody tr {
+        font-size: 8px !important;
+    }
+
+    .tab-bar-container .nav-link {
+        font-size: 12px !important;
+    }
+
+    .star-box {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 600px) {
+    .table thead tr {
+        font-size: 14px !important;
+    }
+
+    .table tbody tr {
+        font-size: 14px !important;
+    }
+
+    .star-box {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+}
